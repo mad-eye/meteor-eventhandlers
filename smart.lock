@@ -1,0 +1,19 @@
+{
+  "meteor": {
+    "git": "https://github.com/mad-eye/meteor.git",
+    "branch": "eventhandlers",
+    "commit": "5fb45bcd0f9dd20219fc9d79a6ebce60d181c6f6"
+  },
+  "dependencies": {
+    "basePackages": {
+      "mocha-web": {}
+    },
+    "packages": {
+      "mocha-web": {
+        "git": "https://github.com/mad-eye/meteor-mocha-web.git",
+        "tag": "v0.0.1",
+        "commit": "1edfc84969fcdd3edc05c4a31668199276594ab5"
+      }
+    }
+  }
+}

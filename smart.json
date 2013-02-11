@@ -1,0 +1,9 @@
+{
+  "meteor": {
+    "git": "https://github.com/mad-eye/meteor.git",
+    "branch": "eventhandlers"
+  },
+  "packages": {
+    "mocha-web": {}
+  }
+}
