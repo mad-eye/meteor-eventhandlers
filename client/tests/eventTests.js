@@ -22,6 +22,21 @@ Meteor.startup(function () {
       record('2.second');
     }
   });
+  Template.hello.events({
+    'click #testButton3' : function () {
+      record('3.first');
+    }
+  });
+  Template.hello.events({
+    'click #testButton3' : function () {
+      record('3.second');
+    }
+  });
+  Template.hello.events({
+    'click #testButton3' : function () {
+      record('3.third');
+    }
+  });
 });
 
 describe("Template.hello.events", function() {
@@ -38,6 +53,13 @@ describe("Template.hello.events", function() {
     document.getElementById("testButton2").click();
     assert.isTrue(recorded['2.second'], 'Should fire second handler.');
     assert.isTrue(recorded['2.first'], 'Should fire first handler.');
+  });
+
+  it("should allow three events to be set", function () {
+    document.getElementById("testButton3").click();
+    assert.isTrue(recorded['3.third'], 'Should fire third handler.');
+    assert.isTrue(recorded['3.second'], 'Should fire second handler.');
+    assert.isTrue(recorded['3.first'], 'Should fire first handler.');
   });
 
 
