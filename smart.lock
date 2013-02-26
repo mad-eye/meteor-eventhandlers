@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/mad-eye/meteor.git",
     "branch": "eventhandlers",
-    "commit": "940d236632120b0460f6b34858139118f6a8b2c4"
+    "commit": "f3f012891515af2091794d30992172fb6e72c01d"
   },
   "dependencies": {
     "basePackages": {
