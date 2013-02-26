@@ -1,0 +1,3 @@
+#! /bin/sh
+
+METEOR_MOCHA_TEST_DIR=client/tests mrt
